@@ -1,0 +1,43 @@
+.process {
+  padding: 2rem;
+  margin-bottom: 3rem;
+  background: var(--color-text);
+  color: #fff;
+  border-radius: var(--radius);
+}
+
+.process__title {
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+}
+
+.process__list {
+  list-style: none;
+  counter-reset: step;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.process__step {
+  counter-increment: step;
+}
+
+.process__step::before {
+  content: '0' counter(step);
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--color-accent);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.process__step-title {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.process__step-text {
+  color: #c4cbd9;
+  font-size: 0.95rem;
+}

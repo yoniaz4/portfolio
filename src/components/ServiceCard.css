@@ -1,0 +1,30 @@
+.service-card {
+  padding: 1.5rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+.service-card__title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.service-card__description {
+  color: var(--color-muted);
+  margin-bottom: 1rem;
+}
+
+.service-card__points {
+  list-style: none;
+  display: grid;
+  gap: 0.4rem;
+  font-size: 0.95rem;
+}
+
+.service-card__points li::before {
+  content: '✓';
+  color: var(--color-accent);
+  font-weight: 700;
+  margin-right: 0.6rem;
+}
