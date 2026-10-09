@@ -2,8 +2,6 @@
 
 My personal portfolio website. It shows who I am, the projects I have built, and the services I offer to companies.
 
-**Live site:** https://portfolio-eta-nine-gvdr8yc8e3.vercel.app/
-
 I built it from scratch while learning React, so the code is kept simple and easy to read: small components, plain CSS and no extra libraries beyond routing.
 
 ## Pages
