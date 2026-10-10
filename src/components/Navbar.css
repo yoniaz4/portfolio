@@ -15,8 +15,19 @@
 }
 
 .navbar__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
   font-weight: 700;
   font-size: 1.1rem;
+}
+
+.navbar__avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--color-accent);
 }
 
 .navbar__links {

@@ -1,6 +1,7 @@
  import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { profile } from '../data/profile'
+import profilePhoto from '../assets/profile.jpg'
 import './Navbar.css'
 
 const links = [
@@ -20,8 +21,9 @@ export default function Navbar() {
     <header className="navbar">
       <div className="container navbar__inner">
         <NavLink to="/" className="navbar__brand" onClick={closeMenu}>
-          {profile.name}
-        </NavLink>
+  <img className="navbar__avatar" src={profilePhoto} alt="" />
+  <span>{profile.name}</span>
+</NavLink>
 
         <button
           type="button"
